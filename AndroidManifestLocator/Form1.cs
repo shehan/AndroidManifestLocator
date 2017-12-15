@@ -26,6 +26,9 @@ namespace AndroidManifestLocator
         private void DoWork()
         {
             UpdateWorkStatusLog($"Started!");
+            outpuFile.WriteLine($"FilePath,PackageName,MaxSdkVersion,MinSdkVersion,TargetSdkVersion},PermissionCount,Permissions");
+            outpuFile.Flush();
+
             var directories = Directory.GetDirectories(rootDirectory);
             using (outpuFile)
             {                
@@ -51,7 +54,7 @@ namespace AndroidManifestLocator
                             var targetSdkVersion = int.TryParse((XMLExtract(content, "uses-sdk", "android:targetSdkVersion").FirstOrDefault()), out intTarget) ? intTarget : 0;
 
                             UpdateWorkStatusLog($"Processing: {file}");
-                            outpuFile.WriteLine($"{dir.Split('\\').Last()},\"{file}\",\"{package}\",{maxSdkVersion},{minSdkVersion},{targetSdkVersion},{permissionCount},\"{permissionString}\"");
+                            outpuFile.WriteLine($"\"{file}\",\"{package}\",{maxSdkVersion},{minSdkVersion},{targetSdkVersion},{permissionCount},\"{permissionString}\"");
                             outpuFile.Flush();
                         }
                     }
