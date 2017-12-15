@@ -39,7 +39,7 @@
             this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStart.Location = new System.Drawing.Point(12, 58);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(528, 23);
+            this.buttonStart.Size = new System.Drawing.Size(454, 23);
             this.buttonStart.TabIndex = 0;
             this.buttonStart.Text = "START";
             this.buttonStart.UseVisualStyleBackColor = true;
@@ -49,7 +49,7 @@
             // 
             this.textBoxPath.Location = new System.Drawing.Point(12, 30);
             this.textBoxPath.Name = "textBoxPath";
-            this.textBoxPath.Size = new System.Drawing.Size(528, 20);
+            this.textBoxPath.Size = new System.Drawing.Size(454, 20);
             this.textBoxPath.TabIndex = 1;
             // 
             // label1
@@ -68,7 +68,7 @@
             this.textBoxLog.Name = "textBoxLog";
             this.textBoxLog.ReadOnly = true;
             this.textBoxLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxLog.Size = new System.Drawing.Size(528, 163);
+            this.textBoxLog.Size = new System.Drawing.Size(454, 345);
             this.textBoxLog.TabIndex = 3;
             this.textBoxLog.Text = "Log:";
             // 
@@ -76,7 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 261);
+            this.ClientSize = new System.Drawing.Size(480, 446);
             this.Controls.Add(this.textBoxLog);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxPath);
