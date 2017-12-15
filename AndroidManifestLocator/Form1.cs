@@ -26,7 +26,7 @@ namespace AndroidManifestLocator
         private void DoWork()
         {
             UpdateWorkStatusLog($"Started!");
-            outpuFile.WriteLine($"FilePath,PackageName,MaxSdkVersion,MinSdkVersion,TargetSdkVersion},PermissionCount,Permissions");
+            outpuFile.WriteLine($"FilePath,PackageName,MaxSdkVersion,MinSdkVersion,TargetSdkVersion,PermissionCount,Permissions");
             outpuFile.Flush();
 
             var directories = Directory.GetDirectories(rootDirectory);
